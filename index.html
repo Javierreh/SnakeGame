@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1 class="title">Snake Game</h1>
+    <hr/>
+    <div id="gameDisplay" class="parent">
+      <h2 class="child">Score:<br /><span id="score">0</span></h2>
+      <canvas class="child" id="myCanvas" width="400" height="400"></canvas>
+      <h2 class="child">Moves:<br /><span id="moves">0</span></h2>
+    </div>
+
+    <div class="parent init">
+      <button class="child" id="startButton">Start Game</button>
+    </div>
+
+    <div class="parent">
+      <div class="child" id="options">
+        Canvas Size:
+        <select id="canvasSize">
+          <option value="200px">200x200</option>
+          <option value="300px">300x300</option>
+          <option value="400px" selected>400x400</option>
+          <option value="500px">500x500</option>
+        </select>
+      </div>
+    </div>
+
+    <script src="mysnake.js"></script>
+  </body>
+</html>
